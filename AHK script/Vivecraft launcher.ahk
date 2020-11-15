@@ -21,12 +21,12 @@ IfExist, location.txt
 	IfWinActive ahk_class CefBrowserWindow
 		WinGetActiveStats, Title, Width, Height, X, Y
 		Width := Width / 2
-		Height := Height - 64
+		Height := Height - 38
 		Click, %Width%, %Height%
 	IfWinNotActive
 		WinActivate ahk_class CefBrowserWindow
 		WinGetActiveStats, Title, Width, Height, X, Y
 		Width := Width / 2
-		Height := Height - 64
+		Height := Height - 38
 		Click, %Width%, %Height%
 }
